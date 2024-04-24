@@ -20,6 +20,9 @@ jobs:
       - name: Display Go Version
         run: go version
       
+      - name: Install Dependencies
+        run: go get .
+
       - name: Build for Windows
         run: go build -o cobaia.exe 
 
