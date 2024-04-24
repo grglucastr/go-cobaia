@@ -1,4 +1,4 @@
-name: Release
+name: 1 - Build and Upload Artifact
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - "master"
 
 jobs:
-  release:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -31,10 +31,5 @@ jobs:
         with:
           name: programa windows
           path: cobaia.exe
-
-      - name: Release
-        uses: softprops/action-gh-release@v1
-        with:
-          files: cobaia.exe
 
       
