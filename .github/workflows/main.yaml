@@ -14,6 +14,9 @@ jobs:
 
       - name: Setup Go
         uses: actions/setup-go@v4
+
+      - name: Display Go Version
+        run: go version
       
       - name: Build for Windows
         run: go build -o cobaia.exe 
