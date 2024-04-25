@@ -26,11 +26,14 @@ jobs:
       - name: Build for Windows
         run: go build -o cobaia.exe 
 
+      - name: list files
+        run: ls -la
+
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: cobaia.exe
-          path: cobaia.exe
+          path: ./cobaia.exe
 
       - name: Release
         uses: softprops/action-gh-release@v2
