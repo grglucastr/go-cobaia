@@ -29,7 +29,7 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: programa windows
+          name: cobaia.exe
           path: cobaia.exe
 
       - name: Release
