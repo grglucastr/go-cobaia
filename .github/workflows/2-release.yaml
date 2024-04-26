@@ -28,6 +28,9 @@ jobs:
       - name: Build for Windows
         run: go build -o cobaia.exe 
 
+      - name: Build for Unix systems
+        run: go build -o cobaia-unix
+
       - name: list files
         run: ls -la
 
